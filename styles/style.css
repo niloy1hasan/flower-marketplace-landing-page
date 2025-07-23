@@ -1,131 +1,205 @@
 :root {
-    --primary-color: #E95A08;
-    --text-light-color: rgba(0, 0, 0, 0.5);
-    --text-gray: #8987A1;
-    --text-light-gray: rgba(107, 114, 128, 1);
-    --text-black-shade: #111111;
-    --text-menu-selected: #252432;
+  --primary-color: #e95a08;
+  --text-light-color: rgba(0, 0, 0, 0.5);
+  --text-gray: #8987a1;
+  --text-light-gray: rgba(107, 114, 128, 1);
+  --text-black-shade: #111111;
+  --text-menu-selected: #252432;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f5f8ff;
 }
 
 /* shared styles */
 
 .flex {
-    display: flex;
+  display: flex;
 }
 
 .max-width {
-    max-width: 1140px;
-    width: 80%;
-    margin: 0 auto;
+  max-width: 1140px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .primary-text {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .sub-title-text {
-    color: var(--text-light-color);
-    font-weight: 500;
+  color: var(--text-light-color);
+  font-weight: 500;
+}
+
+.heading-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  outline: none;
+  border: none;
 }
 
 /* ------ header ------*/
 
 /* navbar */
 .nav-bar {
-    justify-content: space-between;
-    margin-top: 15px;
-    align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  align-items: center;
 }
 
 .brand-logo {
-    max-height: 70px;
+  max-height: 70px;
 }
 
 .menu-bar {
-    gap: 48px;
-    align-items: center;
+  gap: 48px;
+  align-items: center;
 }
 
 .cart-margin {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .menu-item {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 .menu-link {
-    text-decoration: none;
-    color: var(--text-gray);
+  text-decoration: none;
+  color: var(--text-gray);
 }
 
-#home, #cart {
-    color: var(--text-menu-selected);
+#home,
+#cart {
+  color: var(--text-menu-selected);
 }
 
 #home {
-    font-weight: bold;
+  font-weight: bold;
 }
-
 
 /* banner */
 
 .banner {
-    justify-content: space-between;
-    align-items: end;
-    height: 461px;
-    margin-top: 60px;
+  justify-content: space-between;
+  align-items: end;
+  height: 461px;
+  margin-top: 60px;
+  max-width: 1140px;
+  width: 100%;
 }
 
 .banner-title {
-    font-size: 3rem;
-    margin-bottom: 20px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .banner-description {
-    width: 80%;
+  width: 80%;
 }
 
+.banner-img, .banner-content {
+    width: 50%;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+/* plant section */
+
+.plant-section {
+  margin-top: 80px;
+}
+
+.top-heading {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.plant-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.plant-card img {
+  width: 100%;
+}
+
+.plant-name {
+  color: var(--text-black-shade);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.plant-card {
+  text-align: center;
+}
+
+.add-cart-btn {
+  padding: 8px 20px;
+  margin: 15px 0;
+  width: 100%;
+}
 
 /* Responsive Media Query */
 /* mobile device */
 
 @media screen and (max-width: 576px) {
-    .max-width {
-        width: 100%;
-    }
+  .max-width {
+    width: 100%;
+  }
 
-    .nav-bar {
-        padding: 0 16px;
-    }
+  .nav-bar {
+    padding: 0 16px;
+  }
 
-    .mobile-hide {
-        display: none;
-    }
+  .mobile-hide {
+    display: none;
+  }
 
-    /* banner */
+  /* banner */
 
-    .banner {
-        flex-direction: column-reverse;
-        height: auto;
-        gap: 30px;
-    }
+  .banner {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 30px;
+  }
 
-    .banner-content {
-        width: 90%;
-        margin: 0 auto;
-    }
+  .banner-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 
-    .banner-title {
-        font-size: 2rem;
-    }
+  .banner-title {
+    font-size: 2rem;
+  }
 
-    .banner-description {
-        width: 100%;
-    }
+  .banner-description {
+    width: 100%;
+  }
+
+  .banner-img {
+    width: 100%;
+}
+
+  /* plant section */
+
+  .plant-container {
+    grid-template-columns: repeat(1, auto);
+  }
 }
