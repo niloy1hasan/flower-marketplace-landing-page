@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #E95A08;
+    --text-light-color: rgba(0, 0, 0, 0.5);
+    --text-gray: #8987A1;
+    --text-light-gray: rgba(107, 114, 128, 1);
+    --text-black-shade: #111111;
+    --text-menu-selected: #252432;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+
+.flex {
+    display: flex;
+}
+
+.max-width {
+    max-width: 1140px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.sub-title-text {
+    color: var(--text-light-color);
+    font-weight: 500;
+}
+
+/* ------ header ------*/
+
+/* navbar */
+.nav-bar {
+    justify-content: space-between;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.brand-logo {
+    max-height: 70px;
+}
+
+.menu-bar {
+    gap: 48px;
+    align-items: center;
+}
+
+.cart-margin {
+    margin-right: 8px;
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+#home, #cart {
+    color: var(--text-menu-selected);
+}
+
+#home {
+    font-weight: bold;
+}
+
+
+/* banner */
+
+.banner {
+    justify-content: space-between;
+    align-items: end;
+    height: 461px;
+    margin-top: 60px;
+}
+
+.banner-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.banner-description {
+    width: 80%;
+}
+
+
+/* Responsive Media Query */
+/* mobile device */
+
+@media screen and (max-width: 576px) {
+    .max-width {
+        width: 100%;
+    }
+
+    .nav-bar {
+        padding: 0 16px;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    /* banner */
+
+    .banner {
+        flex-direction: column-reverse;
+        height: auto;
+        gap: 30px;
+    }
+
+    .banner-content {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-description {
+        width: 100%;
+    }
+}
