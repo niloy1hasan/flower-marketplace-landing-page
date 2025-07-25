@@ -34,7 +34,7 @@ body {
 
 .sub-title-text {
   color: var(--text-light-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .heading-title {
@@ -273,7 +273,7 @@ body {
 .join-section {
   max-width: 1440px;
   width: 100%;
-  background-image: url("/assets/news-letter-bg.png");
+  background-image: url("../assets/news-letter-bg.png");
   margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -414,7 +414,9 @@ body {
     align-items: center;
   }
   
-
+  .top-heading {
+    width: 90%;
+  }
   .poster-img {
     width: 100%;
   }
@@ -461,9 +463,20 @@ body {
 
 @media screen and (max-width: 576px) {
 
+  .brand-logo {
+    max-width: 64px;
+  }
+
   .plant-container {
     grid-template-columns: repeat(2, auto);
   }
+
+  .add-cart-btn {
+  padding: 12px 20px;
+  margin: 15px 0;
+  width: 100%;
+  font-size: 1.1rem;
+}
 
   /* deal section */
 
@@ -475,6 +488,10 @@ body {
 
   .join-title {
     font-size: 1.5rem;
+  }
+
+  .join-form {
+    max-width: 320px;
   }
 }
 
