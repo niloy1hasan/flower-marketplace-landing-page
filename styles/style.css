@@ -224,6 +224,7 @@ body {
 
 #zabo {
   grid-area: zabo;
+  font-size: 1.5rem;
 }
 
 #ana {
@@ -490,16 +491,30 @@ body {
     gap: 15px;
   }
 
+  #zabo {
+    font-size: 1rem;
+  }
+
   .join-title {
     font-size: 1.5rem;
   }
   
   .subscribe-btn {
-    padding: 10px 15px;
+    padding: 18px 15px;
   }
 
   .user-email {
-    padding: 10px 0 10px 20px;
+    padding: 18px 0 18px 20px;
+  }
+
+  .user-email::placeholder, .subscribe-btn {
+    font-size: 1.1rem;
+  }
+
+
+  .cotent-menu-item,
+  .resources-menu-item {
+    font-size: 1.1rem;
   }
 }
 
