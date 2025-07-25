@@ -110,12 +110,13 @@ body {
   width: 80%;
 }
 
-.banner-img, .banner-content {
-    width: 50%;
+.banner-img,
+.banner-content {
+  width: 50%;
 }
 
 .hero-img {
-    width: 100%;
+  width: 100%;
 }
 
 /* plant section */
@@ -208,12 +209,11 @@ body {
 
 .deal-img-container {
   display: grid;
-  grid-template-areas: 'bloom zabo zabo' 'ana zabo zabo';
+  grid-template-areas: "bloom zabo zabo" "ana zabo zabo";
   gap: 20px;
   margin-top: 80px;
   width: 100%;
 }
-
 
 .deal-img-card {
   position: relative;
@@ -246,6 +246,47 @@ body {
   cursor: pointer;
 }
 
+/* join section */
+  .join-section {
+    max-width: 1440px;
+    width: 100%;
+    background-image: url('/assets/news-letter-bg.png');
+    margin-top: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .join-form-container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 190px 0 150px;
+  }
+
+  .join-title {
+    font-size: 2.4rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .join-form {
+    width: calc(50% + 50px + 40px);
+  }
+
+  .user-email {
+    flex: 1;
+    padding: 15px 25px;
+    outline: none;
+    border: none;
+  }
+
+  .user-email::placeholder {
+    color: var(--text-light-color);
+  }
+
+  .subscribe-btn {
+    padding: 15px 40px;
+  }
 
 /* Responsive Media Query */
 /* mobile device */
@@ -286,7 +327,7 @@ body {
 
   .banner-img {
     width: 100%;
-}
+  }
 
   /* plant section */
 
@@ -298,32 +339,36 @@ body {
     grid-template-columns: repeat(2, auto);
   }
 
-
   .plant-lover-section {
-  flex-direction: column;
-  margin-top: 40px;
-  gap: 30px;
-  width: 90%;
-  justify-content: center;
-  align-items: center;
-}
-.poster-img {
-  width: 100%;
-}
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+  }
 
-.pl-title {
-  font-size: 2.2rem;
-}
+  .poster-img {
+    width: 100%;
+  }
 
-/* deal section */
-.deal-section {
-  margin-top: 60px;
-  width: 90%;
-}
+  .pl-title {
+    font-size: 2.2rem;
+  }
 
-.deal-img-container {
-  grid-template-areas: 'bloom' 'ana' 'zabo';
-  margin-top: 40px;
-  gap: 15px;
-}
+  /* deal section */
+  .deal-section {
+    margin-top: 60px;
+    width: 90%;
+  }
+
+  .deal-img-container {
+    grid-template-areas: "bloom" "ana" "zabo";
+    margin-top: 40px;
+    gap: 15px;
+  }
+
+  .subscribe-btn {
+    padding: 15px 20px;
+  }
 }
