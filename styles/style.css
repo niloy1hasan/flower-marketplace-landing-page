@@ -277,13 +277,14 @@ body {
   margin-top: 60px;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 190px 0 150px;
 }
 
 .join-form-container {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 190px 0 150px;
+  text-align: center;
 }
 
 .join-title {
@@ -293,11 +294,14 @@ body {
 }
 
 .join-form {
-  width: calc(50% + 50px + 40px);
+  justify-content: center;
+  max-width: 830px;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .user-email {
-  flex: 1;
+  flex: 1 1 auto;
   padding: 15px 25px;
   outline: none;
   border: none;
@@ -489,9 +493,13 @@ body {
   .join-title {
     font-size: 1.5rem;
   }
+  
+  .subscribe-btn {
+    padding: 10px 15px;
+  }
 
-  .join-form {
-    max-width: 320px;
+  .user-email {
+    padding: 10px 0 10px 20px;
   }
 }
 
